@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="images.css" />
     <link rel="stylesheet" href="diagnostics.css" />
     <link rel="stylesheet" href="diagnostics-commands.css" />
+    <link rel="stylesheet" href="assistant-popup.css" />
   </head>
   <body>
     <div class="aurora aurora-one"></div><div class="aurora aurora-two"></div>
@@ -82,7 +83,7 @@
     <footer><span>© 2026 KazakhtelecomNet</span><span>Демонстрационный интерфейс B2B-портала</span><a href="#top">Наверх ↑</a></footer>
 
     <button class="chat-fab" data-open-chat aria-label="Открыть чат">◌<span>1</span></button>
-    <aside class="chat" id="chat" aria-hidden="true"><div class="chat-header"><img class="assistant-avatar" src="assets/robot-assistant.jpg" alt="Ассистент KazakhtelecomNet" /><div><b>KazakhtelecomNet</b><small><i></i> Инженер 24/7 онлайн</small></div><button data-close-chat aria-label="Закрыть">×</button></div><div class="messages" id="messages"><div class="bot-message">Здравствуйте! Я виртуальный инженер KazakhtelecomNet. Помогу с B2B-интернетом, VPN и IP-сетями. Также доступна <b>техподдержка 24/7</b>, удалённая диагностика и выезд специалиста на объект.</div></div><div class="quick-questions"><button>Поддержка 24/7</button><button>Выезд специалиста</button><button>Подобрать тариф</button><button>Нужен VPN</button></div><form class="chat-input" id="chat-form"><input id="chat-text" placeholder="Напишите вопрос..." autocomplete="off" /><button>→</button></form></aside>
+    <aside class="chat open" id="chat" aria-hidden="false"><div class="chat-header"><img class="assistant-avatar" src="assets/robot-assistant.jpg" alt="Ассистент KazakhtelecomNet" /><div><b>KazakhtelecomNet</b><small><i></i> Инженер 24/7 онлайн</small></div><button data-close-chat aria-label="Закрыть">×</button></div><div class="assistant-welcome"><img src="assets/robot-assistant.jpg" alt="Виртуальный ассистент KazakhtelecomNet" /><div><b>Виртуальный инженер</b><span>Поддержка 24/7</span></div></div><div class="messages" id="messages"><div class="bot-message">Здравствуйте! Я виртуальный инженер KazakhtelecomNet. Помогу с B2B-интернетом, VPN и IP-сетями. Также доступна <b>техподдержка 24/7</b>, удалённая диагностика и выезд специалиста на объект.</div></div><div class="quick-questions"><button>Поддержка 24/7</button><button>Выезд специалиста</button><button>Подобрать тариф</button><button>Нужен VPN</button></div><form class="chat-input" id="chat-form"><input id="chat-text" placeholder="Напишите вопрос..." autocomplete="off" /><button>→</button></form></aside>
     <div class="toast" id="toast" role="status"></div>
     <script src="script.js"></script>
     <script src="commands.js"></script>
