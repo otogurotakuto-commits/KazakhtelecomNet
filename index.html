@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="outsourcing.css" />
+    <link rel="stylesheet" href="images.css" />
   </head>
   <body>
     <div class="aurora aurora-one"></div><div class="aurora aurora-two"></div>
@@ -29,6 +30,8 @@
           <div class="trust-row"><div><strong>99.99%</strong><span>SLA для Enterprise</span></div><div><strong>24/7</strong><span>Техподдержка</span></div><div><strong>10 Гбит/с</strong><span>Скорость канала</span></div></div>
         </div>
         <div class="network-stage" aria-label="Схема защищенной корпоративной сети">
+          <img class="hero-robot" src="assets/robot-hero.jpg" alt="Цифровой ассистент KazakhtelecomNet" />
+          <div class="robot-caption"><span>AI ASSISTANT</span><b>Ваш инженер связи</b></div>
           <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="grid"></div>
           <div class="node node-main"><span class="node-icon">⌁</span><b>ВАША СЕТЬ</b><small>Secure Core</small></div>
           <div class="node node-one"><span>⌂</span><small>Главный офис</small></div><div class="node node-two"><span>▦</span><small>Филиал</small></div><div class="node node-three"><span>◈</span><small>Cloud</small></div>
@@ -42,8 +45,8 @@
       <section class="solutions section" id="solutions"><div class="section-heading"><p class="eyebrow">РЕШЕНИЯ ДЛЯ БИЗНЕСА</p><h2>Одна инфраструктура.<br />Любой масштаб.</h2></div>
         <div class="solution-grid">
           <article class="solution-card featured"><span class="card-number">01</span><div class="service-icon">⌁</div><h3>Корпоративный<br />интернет</h3><p>Выделенный канал от 50 Мбит/с до 10 Гбит/с с фиксированным SLA.</p><a href="#plans">Выбрать тариф <span>→</span></a></article>
-          <article class="solution-card"><span class="card-number">02</span><div class="service-icon">⌘</div><h3>IPsec VPN</h3><p>Единая защищённая сеть для офисов, филиалов и удалённых сотрудников.</p><a href="#request">Настроить VPN <span>→</span></a></article>
-          <article class="solution-card"><span class="card-number">03</span><div class="service-icon">◉</div><h3>Кибербезопасность</h3><p>DDoS-защита, антивирусы и контроль периметра без лишней сложности.</p><a href="#request">Защитить бизнес <span>→</span></a></article>
+          <article class="solution-card has-photo"><span class="card-number">02</span><img class="card-robot" src="assets/robot-support.avif" alt="Поддержка IPsec VPN" /><div class="service-icon">⌘</div><h3>IPsec VPN</h3><p>Единая защищённая сеть для офисов, филиалов и удалённых сотрудников.</p><a href="#request">Настроить VPN <span>→</span></a></article>
+          <article class="solution-card has-photo"><span class="card-number">03</span><img class="card-robot" src="assets/robot-security.jfif" alt="Кибербезопасность бизнеса" /><div class="service-icon">◉</div><h3>Кибербезопасность</h3><p>DDoS-защита, антивирусы и контроль периметра без лишней сложности.</p><a href="#request">Защитить бизнес <span>→</span></a></article>
         </div>
       </section>
 
@@ -74,7 +77,7 @@
     <footer><span>© 2026 KazakhtelecomNet</span><span>Демонстрационный интерфейс B2B-портала</span><a href="#top">Наверх ↑</a></footer>
 
     <button class="chat-fab" data-open-chat aria-label="Открыть чат">◌<span>1</span></button>
-    <aside class="chat" id="chat" aria-hidden="true"><div class="chat-header"><div><b>KazakhtelecomNet</b><small><i></i> Инженер онлайн</small></div><button data-close-chat aria-label="Закрыть">×</button></div><div class="messages" id="messages"><div class="bot-message">Здравствуйте! Помогу подобрать B2B-интернет, рассчитать IP-подсеть или настроить VPN. Что требуется вашей компании?</div></div><div class="quick-questions"><button>Подобрать тариф</button><button>Рассчитать IP</button><button>Нужен VPN</button></div><form class="chat-input" id="chat-form"><input id="chat-text" placeholder="Напишите вопрос..." autocomplete="off" /><button>→</button></form></aside>
+    <aside class="chat" id="chat" aria-hidden="true"><div class="chat-header"><img class="assistant-avatar" src="assets/robot-assistant.jpg" alt="Ассистент KazakhtelecomNet" /><div><b>KazakhtelecomNet</b><small><i></i> Инженер онлайн</small></div><button data-close-chat aria-label="Закрыть">×</button></div><div class="messages" id="messages"><div class="bot-message">Здравствуйте! Помогу подобрать B2B-интернет, рассчитать IP-подсеть или настроить VPN. Что требуется вашей компании?</div></div><div class="quick-questions"><button>Подобрать тариф</button><button>Рассчитать IP</button><button>Нужен VPN</button></div><form class="chat-input" id="chat-form"><input id="chat-text" placeholder="Напишите вопрос..." autocomplete="off" /><button>→</button></form></aside>
     <div class="toast" id="toast" role="status"></div>
     <script src="script.js"></script>
   </body>
